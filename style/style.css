@@ -41,6 +41,331 @@ nav a {
 
 .btn-contacter {
   border-radius: 24px;
-  border: 1px solid #ffffff;
+  border: 1px solid #333333;
   padding: 8px 24px;
+}
+
+/* HERO */
+
+.hero {
+  padding: 0;
+}
+
+section {
+  border-bottom: 1px solid #333333;
+  padding: 128px 80px;
+}
+
+.container-hero {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 128px 64px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  max-width: 600px;
+}
+
+h1 .top {
+  font-size: 60px;
+}
+
+h1 .bottom {
+  font-size: 64px;
+}
+
+.hot {
+  color: #ff5a1f;
+}
+
+.hero-text {
+  font-size: 18px;
+  max-width: 500px;
+  color: #a1a1aa;
+}
+
+.container-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-social {
+  border: 1px solid #ff5a1f;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.btn-social a {
+  color: #ffffff;
+}
+
+.btn-contact {
+  width: fit-content;
+  border: 1px solid #333333;
+  padding: 12px 32px;
+  border-radius: 24px;
+}
+
+.btn-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.terminal {
+  background: #0f0a06;
+  border: 1px solid #ff6b2b33;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  width: 100%;
+  height: 100%;
+}
+
+.head-term {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #0a0603;
+  border-bottom: 1px solid #ff6b2b22;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot-r {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.dot-g {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #febc2e;
+}
+.dot-b {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #28c840;
+}
+
+.pwd {
+  font-size: 10px;
+  color: #ff6b2b55;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+}
+
+.whoami,
+.bash,
+.cat,
+.cmd-wait {
+  padding: 0 14px;
+  line-height: 1.8;
+}
+
+.whoami {
+  padding-top: 14px;
+}
+.cmd-wait {
+  padding-bottom: 14px;
+}
+
+.hot {
+  color: #ff6b2b;
+}
+
+.cmd {
+  color: #ffd4b0;
+}
+
+.cmd-wait .cmd::before {
+  content: "";
+  width: 8px;
+  height: 10px;
+  background-color: #cc5a1a;
+  animation: blink 1s step-end infinite;
+}
+
+.cmd-wait .cmd {
+  display: flex;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cmd-wait .hot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.req-status {
+  color: #ff8c42;
+  font-weight: 700;
+}
+
+.key {
+  color: #cc5a1a;
+}
+
+.whoami div:last-child,
+.bash div:not(.hot),
+.cat ul {
+  color: #ffe0c8;
+}
+
+.cat ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cat li {
+  color: #ffe0c8;
+}
+.cat .key {
+  color: #cc5a1a;
+}
+
+.nmap,
+.john {
+  padding: 0 18px;
+  line-height: 1.8;
+}
+
+.nmap div,
+.john div {
+  color: #ffe0c8;
+}
+
+.nmap .hot,
+.john .hot {
+  color: #ff6b2b;
+}
+
+.nmap .req-status,
+.john .req-status {
+  color: #ff8c42;
+  font-weight: 700;
+}
+
+/* EXPERTISE */
+
+h2 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.divider::before {
+  content: "";
+  width: 96px;
+  height: 4px;
+  background-color: #ff6b2b;
+  border-radius: 10%;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.expertise {
+  position: relative;
+  background: rgba(87, 19, 0, 0.03);
+  backdrop-filter: blur(4px);
+}
+
+.expertise-desc {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 26px;
+  max-width: 41%;
+}
+
+.expertise-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 80px;
+}
+
+.card-expertise {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #333333;
+  border-radius: 24px;
+  background-color: #1e1e1e;
+  padding: 27px;
+}
+
+.card-expertise .logo {
+  font-size: 32px;
+  color: #ff5a1f;
+  background-color: #222222;
+  border: 1px solid #333333;
+  border-radius: 16px;
+  width: fit-content;
+  padding: 10px 7px;
+}
+
+.card-expertise h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.card-expertise p {
+  color: #a1a1aa;
+  font-size: 16px;
+}
+
+.card-expertise ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.card-expertise li::before {
+  content: "•";
+  color: #ff5a1f;
+  font-size: 30px;
+}
+
+.card-expertise li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }

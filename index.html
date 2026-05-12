@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxime Lalande - Développeur Web & Pentester . Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -13,12 +17,155 @@
         <span>Lalande</span>
       </div>
       <nav>
-        <a href="">Acceuil</a>
-        <a href="">A propos</a>
-        <a href="">Projets</a>
-        <a href="">Contact</a>
+        <a href="./index.html">Accueil</a>
+        <a href="#apropos">A propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
         <a class="btn-contacter" href="">Me contacter</a>
       </nav>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container-hero">
+          <div class="hero-left">
+            <h1>
+              <div class="top">
+                Bonjour, c'est <span class="hot">Maxime</span>
+              </div>
+              <div class="bottom">
+                Je suis <span class="hot">Développeur Web</span>
+              </div>
+            </h1>
+            <p class="hero-text">
+              Passionné par l'informatique et la sécurité, je conçois des
+              applications web robustes et sécurisées. Spécialisée en
+              développement full-stack et tests d'intrusion.
+            </p>
+            <div class="container-socials">
+              <div class="btn-social">
+                <a href="https://github.com/lalandem87"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="btn-social">
+                <a href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <div class="btn-social">
+                <a href="mailto:lalandemaxime37@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+            <div class="btn-contact">
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="terminal">
+              <div class="head-term">
+                <div class="dots">
+                  <span class="dot-r"></span>
+                  <span class="dot-g"></span>
+                  <span class="dot-b"></span>
+                </div>
+                <div class="pwd">maxime@portfolio:~$</div>
+              </div>
+              <div class="whoami">
+                <div class="hot">
+                  maxime@portfolio:~$ <span class="cmd">whoami</span>
+                </div>
+                <div>Maxime Lalande — 21 ans · Limoges FR</div>
+              </div>
+
+              <div class="nmap">
+                <div class="hot">
+                  maxime@portfolio:~$
+                  <span class="cmd">nmap -sV target.local</span>
+                </div>
+                <div>Starting Nmap 7.94</div>
+                <div>
+                  <span class="req-status">[ OK ]</span> 22/tcp open ssh OpenSSH
+                  8.9
+                </div>
+                <div>
+                  <span class="req-status">[ OK ]</span> 80/tcp open http Apache
+                  2.4.52
+                </div>
+                <div>
+                  <span class="req-status">[ OK ]</span> 443/tcp open https
+                  nginx 1.18
+                </div>
+                <div class="hot">
+                  <span class="req-status">[ !! ]</span> 3306/tcp open mysql —
+                  exposed!
+                </div>
+              </div>
+
+              <div class="bash">
+                <div class="hot">
+                  maxime@portfolio:~$ <span class="cmd">./scan.sh skills</span>
+                </div>
+                <div>
+                  <span class="req-status">[ OK ]</span> HTML/CSS · JS · React ·
+                  PHP
+                </div>
+                <div>
+                  <span class="req-status">[ OK ]</span> Node.js · MySQL ·
+                  Python
+                </div>
+                <div class="hot">
+                  <span class="req-status">[ !! ]</span> Cybersecurity detected
+                </div>
+              </div>
+
+              <div class="john">
+                <div class="hot">
+                  maxime@portfolio:~$
+                  <span class="cmd">john --wordlist=rockyou.txt hash.txt</span>
+                </div>
+                <div>Loaded 1 password hash (bcrypt)</div>
+                <div>Press Ctrl+C to abort...</div>
+                <div class="hot">
+                  <span class="req-status">[ !! ]</span> p@ssw0rd123 cracked!
+                </div>
+                <div>Session completed</div>
+              </div>
+
+              <div class="cat">
+                <div class="hot">
+                  maxime@portfolio:~$ <span class="cmd">cat status.txt</span>
+                </div>
+                <ul>
+                  <li class="hot">
+                    <span class="key">status</span> :: open to work
+                  </li>
+                  <li class="hot">
+                    <span class="key">focus</span> :: pentest · dev web
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cmd-wait">
+                <div class="hot">
+                  maxime@portfolio:~$ <span class="cmd"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="expertise">
+        <h2>Mon <span class="hot">Expertise</span></h2>
+        <div class="divider"></div>
+        <p class="expertise-desc">
+          Faire le lien entre l'ingénierie et la sécurité. Je construis pour que
+          ça dure, et je casse pour rendre plus fort.
+        </p>
+        <div class="expertise-cards"></div>
+      </section>
+    </main>
   </body>
+  <script src="./script/main.js" defer></script>
 </html>

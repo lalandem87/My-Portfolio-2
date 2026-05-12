@@ -1,13 +1,14 @@
 {
   "expertise": [
     {
-      "name": "Dév Full-Stack",
+      "name": "Dev Full-Stack",
       "desc": "Architecture et création d'applications web évolutives en utilisant des frameworks modernes comme React, Next.js et Node.js.",
       "type": [
         "Apps Web Sur Mesure",
         "Développement d'API",
         "Architecture de BDD"
-      ]
+      ],
+      "tag": "<i class='fa-solid fa-code'></i>"
     },
     {
       "name": "Tests d'intrusion",
@@ -16,7 +17,8 @@
         "Audits d'Apps Web",
         "Évaluation des Vulnérabilités",
         "Top 10 OWASP"
-      ]
+      ],
+      "tag": "<i class='fa-solid fa-shield-halved'></i>"
     },
     {
       "name": "Conseil en sécurité",
@@ -25,7 +27,8 @@
         "Revue de Code Source",
         "Modélisation des Menaces",
         "Formation en Sécurité"
-      ]
+      ],
+      "tag": "<i class='fa-solid fa-lock'></i>"
     }
   ],
 
@@ -97,11 +100,5 @@
       "objectif": "Analyse de vulnérabilités",
       "type": "CDI / Temps plein"
     }
-  ],
-
-  "social-links": {
-    "Github": "https://github.com/lalandem87",
-    "LinkedIN": "https://www.linkedin.com/in/maxime-lalande-8031252a0/",
-    "Email": "mailto:lalandemaxime37@gmail.com"
-  }
+  ]
 }
