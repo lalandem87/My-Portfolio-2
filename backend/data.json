@@ -1,1 +1,107 @@
-{}
+{
+  "expertise": [
+    {
+      "name": "Dév Full-Stack",
+      "desc": "Architecture et création d'applications web évolutives en utilisant des frameworks modernes comme React, Next.js et Node.js.",
+      "type": [
+        "Apps Web Sur Mesure",
+        "Développement d'API",
+        "Architecture de BDD"
+      ]
+    },
+    {
+      "name": "Tests d'intrusion",
+      "desc": "Simulation de cyberattaques réelles contre vos applications web pour découvrir les vulnérabilités cachées avant les acteurs malveillants.",
+      "type": [
+        "Audits d'Apps Web",
+        "Évaluation des Vulnérabilités",
+        "Top 10 OWASP"
+      ]
+    },
+    {
+      "name": "Conseil en sécurité",
+      "desc": "Intégration de la sécurité dans le cycle de développement. Revues de code, évaluations d'architecture et implémentations DevSecOps.",
+      "type": [
+        "Revue de Code Source",
+        "Modélisation des Menaces",
+        "Formation en Sécurité"
+      ]
+    }
+  ],
+
+  "skills": {
+    "devweb": [
+      { "HTML / CSS": "99%" },
+      { "JavaScript / TypeScript": "96%" },
+      { "React": "90%" },
+      { "NoSQL / SQL": "85%" },
+      { "Python / Django": "80%" },
+      { "PHP / Symfony": "75%" }
+    ],
+    "cybersec": [
+      "Pentest",
+      "Nmap",
+      "Création de malware",
+      "Microsoft / Linux",
+      "Active Directory",
+      "Burp Suite",
+      "OWASP Top 10",
+      "Injection SQL",
+      "Faille XSS"
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "Booki - Agence de voyage",
+      "image": "./pictures/booki.png"
+    },
+    {
+      "name": "Sophie Bluel - Architecte",
+      "image": "./pictures/sophiebluel.png"
+    },
+    {
+      "name": "Nina Carducci - Photographe",
+      "image": "./pictures/ninacarducci.png"
+    },
+    {
+      "name": "Kasa — Location immobilière",
+      "image": "./pictures/kasa.png"
+    },
+    {
+      "name": "Mon Vieux Grimoire",
+      "image": "./pictures/mon-vieux-grimoire.png"
+    },
+    {
+      "name": "Hacklab - Cybersecurity",
+      "image": "./pictures/hacklab.png"
+    },
+    {
+      "name": "Erray Galiskan Carrelages",
+      "image": "./pictures/eraygaliskan.png"
+    }
+  ],
+
+  "offer": [
+    {
+      "name": "Développeur Web",
+      "desc": "Création d'applications web complexes avec React et Node.js, en intégrant les bonnes pratiques de sécurité dès la conception (Security by Design).",
+      "stack": "à voir",
+      "objectif": "Focus sur l'architecture et la performance",
+      "type": "CDI / Temps plein"
+    },
+    {
+      "name": "Ingénieur Cybersécurité",
+      "desc": "Réalisation de tests d'intrusion, audits de code source, et accompagnement des équipes de développement dans la sécurisation de leurs applications.",
+      "stack": "Pentest Web & API",
+      "objectif": "Analyse de vulnérabilités",
+      "type": "CDI / Temps plein"
+    }
+  ],
+
+  "social-links": {
+    "Github": "https://github.com/lalandem87",
+    "LinkedIN": "https://www.linkedin.com/in/maxime-lalande-8031252a0/",
+    "Email": "mailto:lalandemaxime37@gmail.com"
+  }
+}
