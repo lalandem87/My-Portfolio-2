@@ -33,14 +33,15 @@
   ],
 
   "skills": {
-    "devweb": [
-      { "HTML / CSS": "99%" },
-      { "JavaScript / TypeScript": "96%" },
-      { "React": "90%" },
-      { "NoSQL / SQL": "85%" },
-      { "Python / Django": "80%" },
-      { "PHP / Symfony": "75%" }
-    ],
+    "devweb": {
+      "HTML / CSS": "99%",
+      "JavaScript / TypeScript": "96%" ,
+      "React": "90%" ,
+       "NoSQL / SQL": "85%" ,
+      "Python / Django": "80%" ,
+      "PHP / Symfony": "75%" 
+    },
+    
     "cybersec": [
       "Pentest",
       "Nmap",

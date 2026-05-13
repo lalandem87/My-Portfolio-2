@@ -1,49 +1,52 @@
 async function getData() {
-    try {
-        const request = await fetch("../backend/data.json");
-        if(request.ok){
-            const data = await request.json();
-            return data;
-        }
-    } catch (exception) {
-        console.error(`Exception: ${exception}`);
+  try {
+    const request = await fetch("../backend/data.json");
+    if (request.ok) {
+      const data = await request.json();
+      return data;
     }
+  } catch (exception) {
+    console.error(`Exception: ${exception}`);
+  }
 }
 
-function setTerminal(){
-    const lines = [
-        { selector: '.whoami', delay: 300 },
-        { selector: '.nmap', delay: 800 },
-        { selector: '.bash', delay: 1400 },
-        { selector: '.john', delay: 2000 },
-        { selector: '.cat', delay: 2600 },
-        { selector: '.cmd-wait', delay: 3200 },
-    ];
+function setTerminal() {
+  const lines = [
+    { selector: ".whoami", delay: 300 },
+    { selector: ".nmap", delay: 800 },
+    { selector: ".bash", delay: 1400 },
+    { selector: ".john", delay: 2000 },
+    { selector: ".cat", delay: 2600 },
+    { selector: ".cmd-wait", delay: 3200 },
+  ];
 
-    document.querySelectorAll('.whoami,.nmap, .bash, .john, .cat, .cmd-wait').forEach(el => {
-        el.style.opacity = "0";
-        el.style.transition = "opacity 0,3s";
+  document
+    .querySelectorAll(".whoami,.nmap, .bash, .john, .cat, .cmd-wait")
+    .forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transition = "opacity 0,3s";
     });
 
-    lines.forEach(({selector, delay}) => {
-        setTimeout(() => {
-            const el = document.querySelector(selector);
-            if(el){
-                el.style.opacity = "1";
-            }
-        }, delay);
-    });
+  lines.forEach(({ selector, delay }) => {
+    setTimeout(() => {
+      const el = document.querySelector(selector);
+      if (el) {
+        el.style.opacity = "1";
+      }
+    }, delay);
+  });
 }
 
-async function setCardsExpertise() {
-    const data = await getData();
-    if(data){
-        const expertiseData = data["expertise"];
-        const container = document.querySelector(".expertise-cards");
+async function setExpertiseCards() {
+  const data = await getData();
+  if (data) {
+    const expertiseData = data["expertise"];
+    const container = document.querySelector(".expertise-cards");
 
-        expertiseData.forEach(data => {
-            container.insertAdjacentHTML('beforeend', 
-                `
+    expertiseData.forEach((data) => {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `
                 <div class="card-expertise">
                     <div class="logo">${data.tag}</div>
                     <h3>${data.name}</h3>
@@ -54,12 +57,50 @@ async function setCardsExpertise() {
                         <li>${data.type[2]}</li>
                     </ul>
                 </div>
-                `
-            )
-        });
-    }
+                `,
+      );
+    });
+  }
 }
 
-setTerminal();
-setCardsExpertise();
+async function setSkillCards() {
+  const data = await getData();
+  if (data) {
+    const developpement = data["skills"]["devweb"];
+    const cybersec = data["skills"]["cybersec"];
 
+    const containerDev = document.querySelector(".skills-dev");
+    const containerCyber = document.querySelector(".skills-cyber");
+
+    Object.entries(developpement).forEach(([key, value]) => {
+      containerDev.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="skill-bar">
+          <div class="skill-label">
+            <span>${key}</span>
+            <span class="pourcents hot">${value}</span>
+          </div>
+          <div class="bar">
+          <div class="bar-fill" style="width: ${value}"></div>
+          </div>
+        </div>
+        `,
+      );
+    });
+
+    cybersec.forEach((skill) => {
+      containerCyber.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="badge">
+          <h4>${skill}</h4>
+        </div>
+        `,
+      );
+    });
+  }
+}
+setTerminal();
+setExpertiseCards();
+setSkillCards();
