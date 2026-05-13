@@ -450,3 +450,55 @@ h3 {
   background-color: #ff5b1f08;
   padding: 16px;
 }
+
+/* PROJECTS */
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.project-cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  height: 385px;
+  padding: 15px;
+  border: 1px solid #fb7849;
+}
+
+.project-cards .proj-img {
+  width: 100%;
+  height: 200px;
+}
+
+.proj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.project-cards .card h3 {
+  font-size: 24px;
+}
+
+.project-cards .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.proj-desc {
+  font-size: 14px;
+  color: #a1a1aa;
+  max-width: 250px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+}

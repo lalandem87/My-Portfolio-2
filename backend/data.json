@@ -58,31 +58,45 @@
   "projects": [
     {
       "name": "Booki - Agence de voyage",
-      "image": "./pictures/booki.png"
+      "image": "../backend/pictures/booki.png",
+      "langages": ["HTML / CSS"],
+      "desc": "Intégration d'une maquette responsive pour une agence de voyage"
     },
     {
       "name": "Sophie Bluel - Architecte",
-      "image": "./pictures/sophiebluel.png"
+      "image": "../backend/pictures/sophiebluel.png",
+      "langages": ["JavaScript", "API Rest", "DOM"],
+      "desc": "Portfolio dynamique avec authentification et gestion des projets"
     },
     {
       "name": "Nina Carducci - Photographe",
-      "image": "./pictures/ninacarducci.png"
+      "image": "../backend/pictures/ninacarducci.png",
+      "langages": ["SEO", "Debug", "Optimisation"],
+      "desc": "Optimisation SEO, débogage et accessibilité d'un site existant"
     },
     {
       "name": "Kasa — Location immobilière",
-      "image": "./pictures/kasa.png"
+      "image": "../backend/pictures/kasa.png",
+      "langages": ["React", "React Router", "SCSS"],
+      "desc": "Application de location immobilière avec routing et composants dynamiques"
     },
     {
       "name": "Mon Vieux Grimoire",
-      "image": "./pictures/mon-vieux-grimoire.png"
+      "image": "../backend/pictures/mon-vieux-grimoire.png",
+      "langages": ["Node.js", "Express", "MongoDB"],
+      "desc": "API REST sécurisée pour un site de notation de livres"
     },
     {
       "name": "Hacklab - Cybersecurity",
-      "image": "./pictures/hacklab.png"
+      "image": "../backend/pictures/hacklab.png",
+      "langages": ["PHP / Symfony", "MySQL", "React/TypeScript"],
+      "desc": "Challenges de sécurité offensifs — injections, XSS, escalade de privilèges"
     },
     {
       "name": "Erray Galiskan Carrelages",
-      "image": "./pictures/eraygaliskan.png"
+      "image": "../backend/pictures/eraygaliskan.png",
+      "langages": ["PHP", "JavaScript"],
+      "desc": "Site vitrine pour une entreprise de carrelage — réalisé en stage"
     }
   ],
 

@@ -101,6 +101,36 @@ async function setSkillCards() {
     });
   }
 }
+
+async function setProjectsCard() {
+  const data = await getData();
+  if (data) {
+    const projectsData = data["projects"];
+    const container = document.querySelector(".project-cards");
+
+    projectsData.forEach((proj) => {
+      container.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="card">
+          <div class='proj-img'>
+            <img src="${proj.image}" alt="${proj.name}">
+          </div>
+          <div class="info">
+            <h3 class="title">${proj.name}</h3>
+            <p class="proj-desc">${proj.desc}</p>
+            <div class="badges">
+              ${proj.langages.map((lang) => `<span class="badge">${lang}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+        `,
+      );
+    });
+  }
+}
+
 setTerminal();
 setExpertiseCards();
 setSkillCards();
+setProjectsCard();
