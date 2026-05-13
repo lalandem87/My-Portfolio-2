@@ -519,6 +519,10 @@ h3 {
   margin: 0 auto;
 }
 
+.defi .sec-desc {
+  max-width: 58%;
+}
+
 .defi-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -592,4 +596,71 @@ h3 {
 
 .defi .boutons .btn.cv {
   background-color: #ff5a1f;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 128px 272px;
+}
+
+.contact .sec-desc {
+  max-width: 80%;
+}
+
+.container-form {
+  margin-top: 64px;
+  border: 1px solid #262626;
+  background-color: #1e1e1e;
+  border-radius: 24px;
+  padding: 56px;
+}
+
+.container-form .rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.container-form .row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.container-form .row input {
+  border: 1px solid #333333;
+  border-radius: 24px;
+  background-color: #111111;
+  color: white;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.container-form .row label {
+  color: #a1a1aa;
+}
+
+.container-form textarea {
+  border: 1px solid #333333;
+  border-radius: 24px;
+  background-color: #111111;
+  color: white;
+  padding: 12px 16px;
+  height: 150px;
+}
+
+.container-form button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #ff5a1f;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 24px;
+  border: 1px solid;
 }
