@@ -130,7 +130,52 @@ async function setProjectsCard() {
   }
 }
 
+async function setDefiCards() {
+  const data = await getData();
+  if (data) {
+    const offerData = data["offer"];
+    const container = document.querySelector(".defi-cards");
+
+    offerData.forEach((offer) => {
+      if (offer.name === "Développeur Web") {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `
+            <div class="card">
+              <span class="hot">FS</span>
+              <h3>${offer.name}</h3>
+              <p>${offer.desc}</p>
+              <ul>
+                <li>stack: ${offer.stack}</li>
+                <li>${offer.objectif}</li>
+              </ul>
+              <em>${offer.type}</em>
+            </div>
+          `,
+        );
+      } else {
+        container.insertAdjacentHTML(
+          "beforeend",
+          `
+            <div class="card">
+              <span class="hot">CS</span>
+              <h3>${offer.name}</h3>
+              <p>${offer.desc}</p>
+              <ul>
+                <li>${offer.stack}</li>
+                <li>${offer.objectif}</li>
+              </ul>
+              <em>${offer.type}</em>
+            </div>
+          `,
+        );
+      }
+    });
+  }
+}
+
 setTerminal();
 setExpertiseCards();
 setSkillCards();
 setProjectsCard();
+setDefiCards();
