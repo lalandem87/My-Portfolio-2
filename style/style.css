@@ -763,4 +763,42 @@ footer {
   .hero-right {
     display: none;
   }
+
+  .expertise {
+    padding: 64px 24px;
+  }
+
+  h2 {
+    text-align: start;
+  }
+
+  .sec-desc {
+    max-width: 75%;
+  }
+
+  .expertise-cards {
+    grid-template-columns: 1fr;
+    margin-top: 48px;
+  }
+
+  .card-expertise {
+    padding: 32px;
+  }
+
+  .card-expertise .logo {
+    border-radius: 50%;
+    font-size: 24px;
+  }
+
+  .card-expertise h3 {
+    font-size: 24px;
+  }
+
+  .card-expertise p {
+    font-size: 14px;
+  }
+
+  .card-expertise li {
+    font-size: 14px;
+  }
 }
