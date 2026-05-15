@@ -712,3 +712,22 @@ footer {
   align-items: center;
   padding: 32px;
 }
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .expertise-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills,
+  .defi,
+  .contact {
+    padding: 128px 80px;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
