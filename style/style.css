@@ -731,3 +731,36 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+  nav {
+    display: none;
+  }
+
+  .container-hero {
+    padding: 64px 24px;
+  }
+
+  h1 .bottom {
+    font-size: 32px;
+  }
+
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 300px;
+  }
+
+  .btn-contact {
+    width: 100%;
+  }
+
+  .hero-right {
+    display: none;
+  }
+}
