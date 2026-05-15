@@ -739,7 +739,8 @@ footer {
     display: none;
   }
 
-  .container-hero {
+  .container-hero,
+  .expertise {
     padding: 64px 24px;
   }
 
@@ -764,11 +765,8 @@ footer {
     display: none;
   }
 
-  .expertise {
-    padding: 64px 24px;
-  }
-
   h2 {
+    font-size: 48px;
     text-align: start;
   }
 
@@ -781,7 +779,8 @@ footer {
     margin-top: 48px;
   }
 
-  .card-expertise {
+  .card-expertise,
+  .projects {
     padding: 32px;
   }
 
@@ -790,7 +789,8 @@ footer {
     font-size: 24px;
   }
 
-  .card-expertise h3 {
+  .card-expertise h3,
+  .skill-cards h3 {
     font-size: 24px;
   }
 
@@ -800,5 +800,26 @@ footer {
 
   .card-expertise li {
     font-size: 14px;
+  }
+
+  .skills {
+    padding: 80px 24px;
+  }
+
+  .skills .sec-desc {
+    max-width: 85%;
+  }
+
+  .skill-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .badge {
+    padding: 10px;
+    font-size: 10px;
   }
 }
