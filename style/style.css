@@ -676,6 +676,11 @@ h3 {
   width: 100%;
 }
 
+.container-form .row input::placeholder,
+.container-form textarea::placeholder {
+  color: #ffffff;
+}
+
 .container-form .row label {
   color: #a1a1aa;
 }
@@ -790,7 +795,8 @@ footer {
   }
 
   .card-expertise h3,
-  .skill-cards h3 {
+  .skill-cards h3,
+  .defi-cards .card h3 {
     font-size: 24px;
   }
 
@@ -802,11 +808,14 @@ footer {
     font-size: 14px;
   }
 
-  .skills {
+  .skills,
+  .defi,
+  .contact {
     padding: 80px 24px;
   }
 
-  .skills .sec-desc {
+  .skills .sec-desc,
+  .defi .sec-desc {
     max-width: 85%;
   }
 
@@ -821,5 +830,43 @@ footer {
   .badge {
     padding: 10px;
     font-size: 10px;
+  }
+
+  .defi h2,
+  .contact h2 {
+    text-align: center;
+  }
+
+  .defi-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .defi-cards .card {
+    padding: 24px;
+  }
+
+  .defi-cards .card span {
+    font-size: 20px;
+  }
+
+  .defi .boutons {
+    flex-direction: column;
+  }
+
+  .container-form {
+    padding: 24px;
+  }
+
+  .container-form .rows {
+    grid-template-columns: 1fr;
+  }
+
+  .container-form button {
+    font-size: 14px;
+  }
+
+  footer p {
+    text-align: center;
+    max-width: 200px;
   }
 }
