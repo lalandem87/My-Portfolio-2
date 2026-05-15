@@ -11,11 +11,16 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 40px;
   border-bottom: 1px solid #333333;
+  background-color: #0a0603;
 }
 
 .logo {
@@ -34,15 +39,37 @@ nav {
 }
 
 nav a {
+  position: relative;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
 }
 
+nav a:not(.btn-contacter)::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff5a1f;
+  transition: width 0.3s ease;
+}
+
+nav a:not(.btn-contacter):hover::after {
+  width: 100%;
+}
+
 .btn-contacter {
+  background-color: #ff5a1f;
   border-radius: 24px;
   border: 1px solid #333333;
   padding: 8px 24px;
+  font-weight: bold;
+}
+
+.btn-contacter:hover {
+  transform: scale(1.1);
 }
 
 /* HERO */
@@ -389,14 +416,14 @@ h2 {
   padding: 40px;
 }
 
-.head i,
-h3 {
+.head i {
   color: #ff5a1f;
   font-size: 32px;
 }
 
 h3 {
   color: white;
+  font-size: 32px;
 }
 .card .head {
   display: flex;
@@ -469,6 +496,11 @@ h3 {
   min-height: 385px;
   padding: 15px;
   border: 1px solid #fb7849;
+}
+
+.project-cards .card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .project-cards .proj-img {
@@ -667,6 +699,7 @@ h3 {
   padding: 16px 32px;
   border-radius: 24px;
   border: 1px solid;
+  cursor: pointer;
 }
 
 /* FOOTER */

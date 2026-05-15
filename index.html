@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maxime Lalande Portfolio" />
+    <meta name="author" content="Maxime Lalande" />
+    <meta
+      name="keywords"
+      content="développeur web, cybersécurité, pentest, React, Node.js, Limoges"
+    />
+    <meta
+      property="og:title"
+      content="Maxime Lalande — Développeur Web & Pentester"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de Maxime Lalande, développeur web fullstack et passionné de cybersécurité."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://lalandem87.github.io/My-Portfolio/"
+    />
     <title>Maxime Lalande - Développeur Web & Pentester . Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
     <link
@@ -18,14 +37,15 @@
       </div>
       <nav>
         <a href="./index.html">Accueil</a>
-        <a href="#apropos">A propos</a>
+        <a href="#apropos">À propos</a>
+        <a href="#expertise">Expertise</a>
         <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-        <a class="btn-contacter" href="">Me contacter</a>
+        <a href="#defi">Defi</a>
+        <a class="btn-contacter" href="#contact">Me contacter</a>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="apropos" class="hero">
         <div class="container-hero">
           <div class="hero-left">
             <h1>
@@ -43,17 +63,21 @@
             </p>
             <div class="container-socials">
               <div class="btn-social">
-                <a href="https://github.com/lalandem87"
+                <a href="https://github.com/lalandem87" aria-label="btn-github"
                   ><i class="fa-brands fa-github"></i
                 ></a>
               </div>
               <div class="btn-social">
-                <a href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
+                <a
+                  href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
+                  aria-label="btn-linkedin"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </div>
               <div class="btn-social">
-                <a href="mailto:lalandemaxime37@gmail.com"
+                <a
+                  href="mailto:lalandemaxime37@gmail.com"
+                  aria-label="btn-email"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </div>
@@ -156,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="expertise">
+      <section id="expertise" class="expertise">
         <h2>Mon <span class="hot">Expertise</span></h2>
         <div class="divider"></div>
         <p class="sec-desc">
@@ -198,7 +222,7 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section id="projects" class="projects">
         <h2>
           Mes
           <span class="hot">Projets</span>
@@ -210,7 +234,7 @@
         </p>
         <div class="project-cards"></div>
       </section>
-      <section class="defi">
+      <section id="defi" class="defi">
         <h2>
           À la recherche de mon
           <span class="hot">Prochain Défi ?</span>
@@ -222,7 +246,12 @@
         </p>
         <div class="defi-cards"></div>
         <div class="boutons">
-          <a class="btn cv" href="">Télécharger mon CV</a>
+          <a
+            class="btn cv"
+            href="./backend/cv.pdf"
+            download="Lalande_Maxime_CV.pdf"
+            >Télécharger mon CV</a
+          >
           <a
             class="btn linkedin"
             href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
@@ -230,7 +259,7 @@
           >
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2>
           Me
           <span class="hot">Contacter</span>
@@ -266,7 +295,7 @@
             <div class="row">
               <label for="msg">Message</label>
               <textarea
-                name="msg"
+                name="message"
                 id="msg"
                 placeholder="Parlez-moi de votre projet..."
               ></textarea>
@@ -279,17 +308,19 @@
     <footer>
       <div class="container-socials">
         <div class="btn-social">
-          <a href="https://github.com/lalandem87"
+          <a href="https://github.com/lalandem87" aria-label="btn-github"
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
         <div class="btn-social">
-          <a href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
+          <a
+            href="https://www.linkedin.com/in/maxime-lalande-8031252a0/"
+            aria-label="btn-linkedin"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
         <div class="btn-social">
-          <a href="mailto:lalandemaxime37@gmail.com"
+          <a href="mailto:lalandemaxime37@gmail.com" aria-label="btn-email"
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </div>
@@ -298,4 +329,5 @@
     </footer>
   </body>
   <script src="./script/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </html>

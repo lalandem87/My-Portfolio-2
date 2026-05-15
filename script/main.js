@@ -24,7 +24,7 @@ function setTerminal() {
     .querySelectorAll(".whoami,.nmap, .bash, .john, .cat, .cmd-wait")
     .forEach((el) => {
       el.style.opacity = "0";
-      el.style.transition = "opacity 0,3s";
+      el.style.transition = "opacity 0.3s";
     });
 
   lines.forEach(({ selector, delay }) => {
@@ -174,8 +174,26 @@ async function setDefiCards() {
   }
 }
 
+function sendEmail() {
+  emailjs.init("uMVjJ9o6S1ZuIfkfs");
+  const form = document
+    .querySelector("form")
+    .addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_twddaok", "template_e29cifn", e.target)
+        .then(() => {
+          return alert("Message Envoyé").catch((error) => {
+            return console.error(error);
+          });
+        });
+    });
+}
+
 setTerminal();
 setExpertiseCards();
 setSkillCards();
 setProjectsCard();
 setDefiCards();
+sendEmail();
