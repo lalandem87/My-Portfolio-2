@@ -372,7 +372,9 @@ h2 {
 }
 
 /* COMPETENCES */
-
+.skills {
+  padding: 128px 208px;
+}
 .skill-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -534,7 +536,7 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .defi-cards .card span {
@@ -549,11 +551,13 @@ h3 {
 
 .defi-cards .card p {
   color: #a1a1aa;
+  max-width: 400px;
 }
 
 .defi-cards .card ul {
   list-style: none;
   color: #a1a1aa;
+  margin-bottom: 25px;
 }
 
 .defi-cards .card li::before {
@@ -663,4 +667,15 @@ h3 {
   padding: 16px 32px;
   border-radius: 24px;
   border: 1px solid;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
 }
